@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weddingcard</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+
+<div id="stage">
+  <div class="hello"><p id="hi">You are invited</p><b id="guestName">Fatima</b></div>
+  <button class="env" id="env" aria-label="Open the invitation">
+    <div class="back"></div>
+    <div class="letter"><span id="lt"></span></div>
+    <div class="front"></div>
+    <div class="flap"></div>
+    <div class="seal" id="seal"></div>
+  </button>
+  <div class="tap">Tap the seal to open</div>
+</div>
+
+<div id="invite">
+<main>
+  <section class="hero">
+    <p class="small">Together with their families</p>
+    <h1 class="names" id="names"></h1>
+    <p class="small">request the pleasure of your company</p>
+    <p class="date" id="dateLine"></p>
+    <p class="place" id="placeLine"></p>
+    <div class="arch" aria-hidden="true"><div id="mono"></div></div>
+  </section>
+
+  <section>
+    <h2>Counting down</h2>
+    <div class="count" id="count" aria-live="off">
+      <div><b id="cd">0</b><span>days</span></div>
+      <div><b id="ch">0</b><span>hours</span></div>
+      <div><b id="cm">0</b><span>minutes</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The celebrations</h2>
+    <div class="events" id="events"></div>
+  </section>
+
+  <section>
+    <h2>Find us</h2>
+    <div class="card">
+      <h3 id="venue"></h3>
+      <p id="addr"></p>
+      <div class="btns">
+        <a class="btn fill" id="mapLink" target="_blank" rel="noopener">Open in Google Maps</a>
+        <a class="btn" id="calLink" target="_blank" rel="noopener">Add to calendar</a>
+      </div>
+    </div>
+    <div class="dress" aria-label="Colour palette"><i style="background:#14463a"></i><i style="background:#c9a45c"></i><i style="background:#f3dcd6"></i></div>
+    <p class="lede" style="margin-top:10px">Dress in emerald, gold or blush if you like.</p>
+  </section>
+
+  <section>
+    <h2>Will you join us?</h2>
+    <p class="lede" id="rsvpText"></p>
+    <div class="btns" style="margin-top:18px">
+      <a class="btn gold" id="yes" target="_blank" rel="noopener">Yes, I'll be there</a>
+      <a class="btn gold" id="no" target="_blank" rel="noopener">Sorry, can't make it</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>With love and gratitude</p>
+    <div class="names" id="names2"></div>
+  </footer>
+</main>
+</div>
+</body>
+<script src="script.js"></script> 
+</html>
